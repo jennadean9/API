@@ -1,8 +1,18 @@
 const Index = require("../models/stockIndex.js");
-const stockInfo = require("./stockInfo.json");
+const data = require("./stockIndex.json");
+
+const stockData = data.map(item => {
+  const company = {};
+  company.name = item.name;
+  company.symbol = item.symbol;
+  company.sector = item.sector;
+  return company;
+});
+
+console.log(stockData);
 
 Index.remove({}).then(() => {
-  Index.create(stockInfo)
+  Index.create(stockData)
     .then(index => {
       console.log(index);
       process.exit();
