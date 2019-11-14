@@ -12,12 +12,23 @@ const stockInfoController = {
     });
   },
   showSymbol: (req, res) => {
-    Index.findOne({ Symbol: req.params.symbol }).then(index => {
+    let regex = `^${req.params.symbol}$`;
+    re = new RegExp(regex, "i");
+    Index.findOne({ Symbol: re }).then(index => {
       res.json(index);
     });
   },
   showName: (req, res) => {
-    Index.findOne({ Name: req.params.name }).then(index => {
+    let regex = `^${req.params.name}$`;
+    re = new RegExp(regex, "i");
+    Index.findOne({ Name: re }).then(index => {
+      res.json(index);
+    });
+  },
+  showSector: (req, res) => {
+    let regex = `^${req.params.sector}$`;
+    re = new RegExp(regex, "i");
+    Index.find({ Sector: re }).then(index => {
       res.json(index);
     });
   },

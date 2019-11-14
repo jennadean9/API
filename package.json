@@ -1,0 +1,26 @@
+{
+  "name": "stock-api",
+  "version": "1.0.0",
+  "description": "## This project is a functioning Application Programming Interface that allows users to browse through, delete, update, and create various popular companies that are on the stock market.",
+  "main": "index.js",
+  "dependencies": {
+    "axios": "^0.19.0",
+    "express": "^4.17.1",
+    "mongoose": "^5.7.10"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jennadean9/API.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/jennadean9/API/issues"
+  },
+  "homepage": "https://github.com/jennadean9/API#readme"
+}

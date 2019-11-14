@@ -6,7 +6,18 @@ this will be an image
 
 ### How to Use
 
-How to information
+Base URL: /stock
+_Table 1_
+
+|   Query    |           Path           | Description                                           |
+| :--------: | :----------------------: | ----------------------------------------------------- |
+|  **POST**  |         `/stock`         | create a new object/entry                             |
+|  **GET**   |         `/stock`         | browse all objects in database                        |
+|  **GET**   | `/stock/symbol/{symbol}` | find by company's ticker symbol                       |
+|  **GET**   |   `/stock/name/{name}`   | find by company name                                  |
+|  **GET**   | `/stock/sector/{sector}` |
+|  **GET**   |       `/stock/{id}       |
+| **DELETE** |      `/stock/{id}`       | find an object by the id and delete the entire object | String. |
 
 ### Features
 

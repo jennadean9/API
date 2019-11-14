@@ -11,7 +11,22 @@ const stockSchema = new Schema({
     required: true,
     unique: true
   },
-  Sector: String
+  Sector: {
+    type: String,
+    enum: [
+      "Industrials",
+      "Health Care",
+      "Information Technology",
+      "Utilities",
+      "Consumer Discretionary",
+      "Financials",
+      "Materials",
+      "Real Estate",
+      "Energy",
+      "Consumer Staples",
+      "Telecommunication Services"
+    ]
+  }
 });
 
 module.exports = mongoose.model("Index", stockSchema);
