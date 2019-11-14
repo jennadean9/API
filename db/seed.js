@@ -1,4 +1,4 @@
-const Index = require("../models/StockIndex.js");
+const Index = require("../models/stockIndex.js");
 const data = require("./stockIndex.json");
 
 Index.remove({}).then(() => {
