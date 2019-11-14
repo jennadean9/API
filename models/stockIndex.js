@@ -30,3 +30,4 @@ const stockSchema = new Schema({
 });
 
 module.exports = mongoose.model("Index", stockSchema);
+//comment

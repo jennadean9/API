@@ -1,4 +1,4 @@
-const Index = require("../models/StockIndex.js");
+const Index = require("../models/stockIndex.js");
 
 const stockInfoController = {
   index: (req, res) => {
@@ -52,3 +52,5 @@ const stockInfoController = {
 };
 
 module.exports = stockInfoController;
+
+//comment
