@@ -12,6 +12,10 @@ How to information
 
 Using Express.js and MongoDB, I created an API that.....
 
+### Future Goals
+
+In the very near future, I will be using this API and creating a full-stack application that incorporates another API called "Alpha Vantage" to update each stock with real-time data of the stock, when a company name is clicked on or searched.
+
 ### Thanks
 
 Thanks to xyz for the data....
