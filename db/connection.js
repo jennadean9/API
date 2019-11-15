@@ -1,6 +1,9 @@
 const mongoose = require("mongoose");
 
-mongoose.connect("mongodb://localhost/stocks", { useNewUrlParser: true });
+mongoose.connect("mongodb://localhost/stocks", {
+  useNewUrlParser: true,
+  useUnifiedTopology: true
+});
 
 module.exports = mongoose;
 
