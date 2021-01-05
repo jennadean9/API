@@ -4,7 +4,7 @@
   "description": "## This project is a functioning Application Programming Interface that allows users to browse through, delete, update, and create various popular companies that are on the stock market.",
   "main": "index.js",
   "dependencies": {
-    "axios": "^0.19.0",
+    "axios": "^0.21.1",
     "express": "^4.17.1",
     "mongoose": "^5.7.11"
   },
